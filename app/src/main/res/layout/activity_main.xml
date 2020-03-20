@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.qmuiteam.qmui.widget.pullRefreshLayout.QMUIPullRefreshLayout
+        android:id="@+id/pull_to_refresh"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.qmuiteam.qmui.nestedScroll.QMUIContinuousNestedScrollLayout
+            android:id="@+id/coordinator"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </com.qmuiteam.qmui.widget.pullRefreshLayout.QMUIPullRefreshLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/fl_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#FF165CFE"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:paddingTop="24dp"
+        android:alpha="0"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_arrow_back"
+            android:layout_width="@dimen/title_bar_size"
+            android:layout_height="@dimen/title_bar_size"
+            android:scaleType="centerInside"
+            android:layout_alignParentStart="true"
+            app:srcCompat="@drawable/ic_arrow_back_black_24dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_bar_size"
+            android:layout_marginStart="@dimen/title_bar_size"
+            android:layout_marginEnd="@dimen/title_bar_size"
+            android:gravity="center"
+            android:text="this is title"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
