@@ -20,9 +20,11 @@
         android:textSize="28sp"
         android:textColor="@android:color/black"
         android:gravity="center"
+        android:maxLines="3"
+        android:ellipsize="end"
         app:layout_constraintBottom_toBottomOf="@+id/banner"
         app:layout_constraintEnd_toEndOf="@+id/banner"
-        android:text="this a top banner"
+        android:text="this a top banner this a top banner this a top banner this a top banner this a top banner this a top banner "
         app:layout_constraintStart_toStartOf="@+id/banner"
         app:layout_constraintTop_toTopOf="@+id/banner" />
 

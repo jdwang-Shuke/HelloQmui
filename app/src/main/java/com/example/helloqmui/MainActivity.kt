@@ -105,7 +105,7 @@ class MainActivity : AppCompatActivity() {
                         bottomRange
                     )
                 )
-                mBinding.flTitle.alpha = Math.min(topCurrent*1f/SCROLL_THRESHOLD,1f)
+                mBinding.flTitle.alpha = Math.min(offsetCurrent*1f/SCROLL_THRESHOLD,1f)
             }
         })
     }

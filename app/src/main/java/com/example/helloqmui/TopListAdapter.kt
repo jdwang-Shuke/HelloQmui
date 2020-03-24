@@ -19,10 +19,10 @@ class TopListAdapter(mContext: Context) : RecyclerView.Adapter<RecyclerView.View
 
     private val testData: List<String?> = arrayListOf(
         "Helps", "Maintain", "Liver",
-        "Health", "Function", "Supports",
+        "Health", "Function", "Supports"/*,
         "Healthy", "Fat", "Metabolism",
         "Nuturally", "Bracket", "Refrigerator",
-        "Bathtub", "Wardrobe", "Comb"
+        "Bathtub", "Wardrobe", "Comb"*/
     ).shuffled()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
