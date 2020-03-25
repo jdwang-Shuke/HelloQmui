@@ -11,6 +11,8 @@ import androidx.coordinatorlayout.widget.CoordinatorLayout
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.helloqmui.common.DisplayUtils.getDimenDp
+import com.example.helloqmui.common.DisplayUtils.statusBarHeight
 import com.example.helloqmui.databinding.ActivityMainBinding
 import com.example.helloqmui.databinding.ItemBannerBinding
 import com.example.helloqmui.view.QDContinuousBottomView
@@ -53,7 +55,9 @@ class MainActivity : AppCompatActivity() {
         val bottomLp = CoordinatorLayout.LayoutParams(
             matchParent, matchParent
         )
-        bottomLp.behavior = QMUIContinuousNestedBottomAreaBehavior()
+        bottomLp.behavior = QMUIContinuousNestedBottomAreaBehavior().apply {
+            setTopInset(statusBarHeight()/*状态栏*/ + getDimenDp(R.dimen.title_bar_size) /*title*/)
+        }
         mBinding.coordinator.setBottomAreaView(mBottomView, bottomLp)
         //滑动监听
         setListener()

@@ -69,15 +69,12 @@ public class QDContinuousBottomView extends QMUIContinuousNestedBottomDelegateLa
 
     @Override
     protected int getHeaderHeightLayoutParam() {
-//        return ViewGroup.LayoutParams.WRAP_CONTENT;
         return getHeaderStickyHeight();
     }
 
     @Override
     protected int getHeaderStickyHeight() {
-        return DisplayUtils.statusBarHeight() +//状态栏
-                DisplayUtils.getDimenDp(R.dimen.title_bar_size) +//title
-                stickyBarSize;//吸顶标签
+        return stickyBarSize;//吸顶标签
     }
 
 
