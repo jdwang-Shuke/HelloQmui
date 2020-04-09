@@ -25,14 +25,14 @@ import android.view.View;
 import android.view.ViewConfiguration;
 import android.view.ViewGroup;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.coordinatorlayout.widget.CoordinatorLayout;
-
 import com.qmuiteam.qmui.util.QMUILangHelper;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
 
 public class QMUIContinuousNestedScrollLayout extends CoordinatorLayout implements
         QMUIContinuousNestedTopAreaBehavior.Callback, QMUIDraggableScrollBar.Callback {
@@ -177,9 +177,7 @@ public class QMUIContinuousNestedScrollLayout extends CoordinatorLayout implemen
     }
 
     public void removeAllScrollListener() {
-        if (mOnScrollListeners!=null && !mOnScrollListeners.isEmpty()){
-            mOnScrollListeners.clear();
-        }
+        mOnScrollListeners.clear();
     }
 
     public void setKeepBottomAreaStableWhenCheckLayout(boolean keepBottomAreaStableWhenCheckLayout) {

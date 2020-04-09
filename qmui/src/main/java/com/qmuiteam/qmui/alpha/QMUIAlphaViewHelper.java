@@ -16,9 +16,8 @@
 
 package com.qmuiteam.qmui.alpha;
 
-import android.view.View;
-
 import androidx.annotation.NonNull;
+import android.view.View;
 
 import com.qmuiteam.qmui.R;
 import com.qmuiteam.qmui.util.QMUIResHelper;

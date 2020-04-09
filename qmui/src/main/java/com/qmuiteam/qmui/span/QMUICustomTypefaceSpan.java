@@ -20,10 +20,9 @@ import android.graphics.Paint;
 import android.graphics.Typeface;
 import android.os.Parcel;
 import android.os.Parcelable;
+import androidx.annotation.Nullable;
 import android.text.TextPaint;
 import android.text.style.TypefaceSpan;
-
-import androidx.annotation.Nullable;
 
 /**
  * 支持以 Typeface 的方式设置 span 的字体，实现自定义字体的效果

@@ -19,16 +19,15 @@ package com.qmuiteam.qmui.widget.webview;
 import android.content.Context;
 import android.graphics.Rect;
 import android.os.Build;
+import androidx.annotation.NonNull;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowInsetsCompat;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.WindowInsets;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-
-import androidx.annotation.NonNull;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 import com.qmuiteam.qmui.util.QMUIDisplayHelper;
 import com.qmuiteam.qmui.util.QMUINotchHelper;

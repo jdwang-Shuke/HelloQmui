@@ -50,16 +50,6 @@ dependencies {
     api "androidx.annotation:annotation:$annotationVersion"
     api "com.google.android.material:material:$materialVersion"
     api "androidx.constraintlayout:constraintlayout:$constraintLayoutVersion"
-    lintChecks project(':lintrule')
-
-    //test
-    testImplementation 'junit:junit:4.13'
     api 'androidx.swiperefreshlayout:swiperefreshlayout:1.0.0'
     compileOnly "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-}
-
-// deploy
-File deployConfig = rootProject.file('gradle/deploy.properties')
-if (deployConfig.exists()) {
-    apply from: rootProject.file('gradle/deploy.gradle')
 }

@@ -19,12 +19,12 @@ package com.qmuiteam.qmui.widget.dialog;
 import android.view.View;
 import android.view.ViewGroup;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class QMUIBottomSheetListAdapter extends RecyclerView.Adapter<QMUIBottomSheetListAdapter.VH> {
 

@@ -20,14 +20,14 @@ import android.content.Context;
 import android.content.res.ColorStateList;
 import android.util.AttributeSet;
 
-import androidx.annotation.Nullable;
-import androidx.collection.SimpleArrayMap;
-
 import com.qmuiteam.qmui.R;
 import com.qmuiteam.qmui.alpha.QMUIAlphaButton;
 import com.qmuiteam.qmui.skin.QMUISkinValueBuilder;
 import com.qmuiteam.qmui.skin.defaultAttr.IQMUISkinDefaultAttrProvider;
 import com.qmuiteam.qmui.util.QMUIViewHelper;
+
+import androidx.annotation.Nullable;
+import androidx.collection.SimpleArrayMap;
 
 /**
  * 使按钮能方便地指定圆角、边框颜色、边框粗细、背景色

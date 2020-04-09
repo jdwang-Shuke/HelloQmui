@@ -20,9 +20,9 @@ import android.content.Context;
 import android.os.Bundle;
 import android.util.AttributeSet;
 
-import androidx.annotation.NonNull;
-
 import com.qmuiteam.qmui.layout.QMUILinearLayout;
+
+import androidx.annotation.NonNull;
 
 public class QMUIContinuousNestedTopLinearLayout extends QMUILinearLayout implements IQMUIContinuousNestedTopView {
 

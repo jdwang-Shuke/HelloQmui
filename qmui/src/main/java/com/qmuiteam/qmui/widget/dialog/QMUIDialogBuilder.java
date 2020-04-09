@@ -26,12 +26,6 @@ import android.widget.LinearLayout;
 import android.widget.Space;
 import android.widget.TextView;
 
-import androidx.annotation.IntDef;
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.annotation.StyleRes;
-import androidx.constraintlayout.widget.ConstraintLayout;
-
 import com.qmuiteam.qmui.R;
 import com.qmuiteam.qmui.layout.QMUIButton;
 import com.qmuiteam.qmui.layout.QMUILinearLayout;
@@ -47,6 +41,12 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.util.ArrayList;
 import java.util.List;
+
+import androidx.annotation.IntDef;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.annotation.StyleRes;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
 /**
  * 创建 {@link QMUIDialog} 的 Builder 基类, 不同的 Builder 子类拥有创建不同类型对话框的能力, 具体见子类。
@@ -106,7 +106,6 @@ public abstract class QMUIDialogBuilder<T extends QMUIDialogBuilder> {
 
     public QMUIDialogBuilder(Context context) {
         this.mContext = context;
-        mSkinManager = QMUISkinManager.defaultInstance(context);
     }
 
     public Context getBaseContext() {

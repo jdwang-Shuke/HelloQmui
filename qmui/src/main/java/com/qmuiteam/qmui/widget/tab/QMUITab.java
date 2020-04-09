@@ -20,13 +20,14 @@ import android.graphics.Typeface;
 import android.view.Gravity;
 import android.view.View;
 
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+
+import androidx.annotation.ColorInt;
 import androidx.annotation.IntDef;
 import androidx.annotation.NonNull;
 
 import com.qmuiteam.qmui.skin.QMUISkinHelper;
-
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
 
 public class QMUITab {
     public static final int ICON_POSITION_LEFT = 0;

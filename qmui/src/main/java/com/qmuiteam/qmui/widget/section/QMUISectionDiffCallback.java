@@ -16,11 +16,10 @@
 
 package com.qmuiteam.qmui.widget.section;
 
-import android.util.SparseIntArray;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.DiffUtil;
+import android.util.SparseIntArray;
 
 import java.util.ArrayList;
 import java.util.List;

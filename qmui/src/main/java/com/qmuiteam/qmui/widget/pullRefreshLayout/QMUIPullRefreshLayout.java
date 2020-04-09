@@ -30,6 +30,15 @@ import android.view.ViewGroup;
 import android.widget.AbsListView;
 import android.widget.Scroller;
 
+import com.qmuiteam.qmui.BuildConfig;
+import com.qmuiteam.qmui.R;
+import com.qmuiteam.qmui.nestedScroll.QMUIContinuousNestedScrollLayout;
+import com.qmuiteam.qmui.skin.QMUISkinValueBuilder;
+import com.qmuiteam.qmui.skin.defaultAttr.IQMUISkinDefaultAttrProvider;
+import com.qmuiteam.qmui.util.QMUIDisplayHelper;
+import com.qmuiteam.qmui.util.QMUIResHelper;
+import com.qmuiteam.qmui.widget.section.QMUIStickySectionLayout;
+
 import androidx.annotation.ColorInt;
 import androidx.annotation.ColorRes;
 import androidx.annotation.Nullable;
@@ -41,15 +50,6 @@ import androidx.core.view.NestedScrollingParentHelper;
 import androidx.core.view.ViewCompat;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.CircularProgressDrawable;
-
-import com.qmuiteam.qmui.BuildConfig;
-import com.qmuiteam.qmui.R;
-import com.qmuiteam.qmui.nestedScroll.QMUIContinuousNestedScrollLayout;
-import com.qmuiteam.qmui.skin.QMUISkinValueBuilder;
-import com.qmuiteam.qmui.skin.defaultAttr.IQMUISkinDefaultAttrProvider;
-import com.qmuiteam.qmui.util.QMUIDisplayHelper;
-import com.qmuiteam.qmui.util.QMUIResHelper;
-import com.qmuiteam.qmui.widget.section.QMUIStickySectionLayout;
 
 /**
  * 下拉刷新控件, 作为容器，下拉时会将子 View 下移, 并拉出 RefreshView（表示正在刷新的 View）

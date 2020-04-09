@@ -26,13 +26,13 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.view.animation.LinearInterpolator;
 
-import androidx.annotation.NonNull;
-import androidx.collection.SimpleArrayMap;
-
 import com.qmuiteam.qmui.R;
 import com.qmuiteam.qmui.skin.QMUISkinValueBuilder;
 import com.qmuiteam.qmui.skin.defaultAttr.IQMUISkinDefaultAttrProvider;
 import com.qmuiteam.qmui.util.QMUIDisplayHelper;
+
+import androidx.annotation.NonNull;
+import androidx.collection.SimpleArrayMap;
 
 /**
  * 用于显示 Loading 的 {@link View}，支持颜色和大小的设置。

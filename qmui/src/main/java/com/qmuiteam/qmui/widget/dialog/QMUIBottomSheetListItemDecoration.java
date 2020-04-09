@@ -22,13 +22,15 @@ import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.view.View;
 
-import androidx.annotation.NonNull;
-import androidx.recyclerview.widget.RecyclerView;
-
 import com.qmuiteam.qmui.R;
 import com.qmuiteam.qmui.skin.IQMUISkinHandlerDecoration;
 import com.qmuiteam.qmui.skin.QMUISkinManager;
 import com.qmuiteam.qmui.util.QMUIResHelper;
+
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
+
+import org.jetbrains.annotations.NotNull;
 
 public class QMUIBottomSheetListItemDecoration extends RecyclerView.ItemDecoration
         implements IQMUISkinHandlerDecoration {
@@ -73,10 +75,10 @@ public class QMUIBottomSheetListItemDecoration extends RecyclerView.ItemDecorati
     }
 
     @Override
-    public void handle(RecyclerView recyclerView,
-                       QMUISkinManager manager,
+    public void handle(@NotNull RecyclerView recyclerView,
+                       @NotNull QMUISkinManager manager,
                        int skinIndex,
-                       Resources.Theme theme) {
+                       @NotNull Resources.Theme theme) {
         if (mSeparatorAttr != 0) {
             mSeparatorPaint.setColor(QMUIResHelper.getAttrColor(theme, mSeparatorAttr));
         }

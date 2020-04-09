@@ -66,10 +66,8 @@ public class QMUISkinHelper {
 
     public static void setSkinValue(@NonNull View view, String value) {
         view.setTag(R.id.qmui_skin_value, value);
-        QMUISkinManager.ViewSkinCurrent skinCurrent = QMUISkinManager.getViewSkinCurrent(view);
-        if (skinCurrent != null) {
-            QMUISkinManager.of(skinCurrent.managerName, view.getContext()).refreshTheme(view, skinCurrent.index);
-        }
+        refreshViewSkin(view);
+
     }
 
     @MainThread
@@ -83,6 +81,31 @@ public class QMUISkinHelper {
         QMUISkinManager.ViewSkinCurrent skinCurrent = QMUISkinManager.getViewSkinCurrent(view);
         if(skinCurrent != null){
             QMUISkinManager.of(skinCurrent.managerName, view.getContext()).refreshRecyclerDecoration(view, itemDecoration, skinCurrent.index);
+        }
+    }
+
+    public static int getCurrentSkinIndex(@NonNull View view) {
+        QMUISkinManager.ViewSkinCurrent viewSkinCurrent = QMUISkinManager.getViewSkinCurrent(view);
+        if (viewSkinCurrent != null) {
+            return viewSkinCurrent.index;
+        }
+        return QMUISkinManager.DEFAULT_SKIN;
+    }
+
+    public static void refreshViewSkin(@NonNull View view){
+        QMUISkinManager.ViewSkinCurrent skinCurrent = QMUISkinManager.getViewSkinCurrent(view);
+        if (skinCurrent != null) {
+            QMUISkinManager.of(skinCurrent.managerName, view.getContext()).refreshTheme(view, skinCurrent.index);
+        }
+    }
+
+    public static void syncViewSkin(@NonNull View view, @NonNull View sourceView){
+        QMUISkinManager.ViewSkinCurrent source = QMUISkinManager.getViewSkinCurrent(sourceView);
+        if (source != null) {
+            QMUISkinManager.ViewSkinCurrent skin = QMUISkinManager.getViewSkinCurrent(view);
+            if(!source.equals(skin)) {
+                QMUISkinManager.of(source.managerName, view.getContext()).dispatch(view, source.index);
+            }
         }
     }
 

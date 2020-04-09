@@ -18,11 +18,11 @@ package com.qmuiteam.qmui.layout;
 
 import android.view.View;
 
-import androidx.annotation.ColorInt;
-import androidx.annotation.IntDef;
-
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
+
+import androidx.annotation.ColorInt;
+import androidx.annotation.IntDef;
 
 /**
  * Created by cgspine on 2018/3/23.

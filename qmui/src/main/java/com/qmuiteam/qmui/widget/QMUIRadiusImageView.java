@@ -37,11 +37,11 @@ import android.os.Build;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 
+import com.qmuiteam.qmui.R;
+
 import androidx.annotation.ColorInt;
 import androidx.annotation.NonNull;
 import androidx.appcompat.widget.AppCompatImageView;
-
-import com.qmuiteam.qmui.R;
 
 /**
  * 提供为图片添加圆角、边框、剪裁到圆形或其他形状等功能。

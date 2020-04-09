@@ -22,12 +22,12 @@ import android.view.View;
 import android.view.ViewParent;
 import android.view.WindowManager;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-
 import com.qmuiteam.qmui.BuildConfig;
 
 import java.lang.reflect.Field;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 /**
  * @author cginechen

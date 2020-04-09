@@ -17,18 +17,23 @@ package com.qmuiteam.qmui.skin.handler;
 
 import android.content.res.ColorStateList;
 import android.view.View;
+import android.widget.CompoundButton;
 import android.widget.ImageView;
 
-import androidx.core.widget.ImageViewCompat;
-
 import com.qmuiteam.qmui.skin.QMUISkinHelper;
+import com.qmuiteam.qmui.util.QMUIViewHelper;
 import com.qmuiteam.qmui.widget.QMUILoadingView;
 import com.qmuiteam.qmui.widget.pullRefreshLayout.QMUIPullRefreshLayout;
+
+import androidx.core.widget.CompoundButtonCompat;
+import androidx.core.widget.ImageViewCompat;
+
+import org.jetbrains.annotations.NotNull;
 
 public class QMUISkinRuleTintColorHandler extends QMUISkinRuleColorStateListHandler {
 
     @Override
-    void handle(View view, String name, ColorStateList colorStateList) {
+    protected void handle(@NotNull View view, @NotNull String name, ColorStateList colorStateList) {
         if(colorStateList == null){
             return;
         }
@@ -38,6 +43,8 @@ public class QMUISkinRuleTintColorHandler extends QMUISkinRuleColorStateListHand
             ((QMUIPullRefreshLayout.RefreshView)view).setColorSchemeColors(colorStateList.getDefaultColor());
         }else if (view instanceof ImageView) {
             ImageViewCompat.setImageTintList((ImageView) view, colorStateList);
+        }else if(view instanceof CompoundButton){
+            CompoundButtonCompat.setButtonTintList((CompoundButton)view, colorStateList);
         }else{
             QMUISkinHelper.warnRuleNotSupport(view, name);
         }

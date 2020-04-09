@@ -20,9 +20,8 @@ import android.content.Context;
 import android.content.res.Configuration;
 import android.graphics.Rect;
 import android.os.Build;
-import android.util.AttributeSet;
-
 import androidx.core.view.ViewCompat;
+import android.util.AttributeSet;
 
 import com.qmuiteam.qmui.layout.QMUIFrameLayout;
 import com.qmuiteam.qmui.util.QMUIWindowInsetHelper;

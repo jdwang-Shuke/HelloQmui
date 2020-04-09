@@ -20,9 +20,10 @@ import android.content.Context;
 import android.graphics.Canvas;
 import android.util.AttributeSet;
 
-import androidx.annotation.ColorInt;
-
 import com.qmuiteam.qmui.alpha.QMUIAlphaConstraintLayout;
+import com.qmuiteam.qmui.alpha.QMUIAlphaLinearLayout;
+
+import androidx.annotation.ColorInt;
 
 /**
  * @author cginechen

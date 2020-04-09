@@ -33,6 +33,8 @@ import android.view.WindowManager;
 
 import java.lang.reflect.Method;
 
+import static android.content.res.Configuration.ORIENTATION_LANDSCAPE;
+
 public class QMUINotchHelper {
 
     private static final String TAG = "QMUINotchHelper";

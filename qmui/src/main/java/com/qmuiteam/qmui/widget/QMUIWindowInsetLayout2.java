@@ -22,10 +22,11 @@ import android.graphics.Rect;
 import android.os.Build;
 import android.util.AttributeSet;
 
+import com.qmuiteam.qmui.layout.QMUIConstraintLayout;
+import com.qmuiteam.qmui.util.QMUIWindowInsetHelper;
+
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.core.view.ViewCompat;
-
-import com.qmuiteam.qmui.util.QMUIWindowInsetHelper;
 
 /**
  * From: https://github.com/oxoooo/earth/blob/30bd82fac7867be596bddf3bd0b32d8be3800665/app/src/main/java/ooo/oxo/apps/earth/widget/WindowInsetsFrameLayout.java
@@ -38,7 +39,7 @@ import com.qmuiteam.qmui.util.QMUIWindowInsetHelper;
  * @author cginechen
  * @date 2016-03-25
  */
-public class QMUIWindowInsetLayout2 extends ConstraintLayout implements IWindowInsetLayout {
+public class QMUIWindowInsetLayout2 extends QMUIConstraintLayout implements IWindowInsetLayout {
     protected QMUIWindowInsetHelper mQMUIWindowInsetHelper;
 
     public QMUIWindowInsetLayout2(Context context) {

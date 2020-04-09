@@ -26,12 +26,12 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.qmuiteam.qmui.util.QMUIWindowInsetHelper;
+
 import androidx.annotation.NonNull;
 import androidx.core.view.ViewCompat;
 import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
-
-import com.qmuiteam.qmui.util.QMUIWindowInsetHelper;
 
 /**
  * @author cginechen

@@ -24,14 +24,14 @@ import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.RelativeLayout;
 
-import androidx.collection.SimpleArrayMap;
-
 import com.qmuiteam.qmui.R;
 import com.qmuiteam.qmui.alpha.QMUIAlphaImageButton;
 import com.qmuiteam.qmui.layout.QMUIFrameLayout;
 import com.qmuiteam.qmui.qqface.QMUIQQFaceView;
 import com.qmuiteam.qmui.skin.QMUISkinValueBuilder;
 import com.qmuiteam.qmui.skin.defaultAttr.IQMUISkinDefaultAttrProvider;
+
+import androidx.collection.SimpleArrayMap;
 
 /**
  * 这是一个对 {@link QMUITopBar} 的代理类，需要它的原因是：
@@ -69,6 +69,10 @@ public class QMUITopBarLayout extends QMUIFrameLayout implements IQMUISkinDefaul
         addView(mTopBar, lp);
     }
 
+    public QMUITopBar getTopBar() {
+        return mTopBar;
+    }
+
     public void setCenterView(View view) {
         mTopBar.setCenterView(view);
     }
@@ -81,16 +85,16 @@ public class QMUITopBarLayout extends QMUIFrameLayout implements IQMUISkinDefaul
         return mTopBar.setTitle(title);
     }
 
-    public void showTitlteView(boolean toShow) {
+    public void showTitleView(boolean toShow) {
         mTopBar.showTitleView(toShow);
     }
 
-    public void setSubTitle(int resId) {
-        mTopBar.setSubTitle(resId);
+    public QMUIQQFaceView setSubTitle(int resId) {
+        return mTopBar.setSubTitle(resId);
     }
 
-    public void setSubTitle(String subTitle) {
-        mTopBar.setSubTitle(subTitle);
+    public QMUIQQFaceView setSubTitle(String subTitle) {
+        return mTopBar.setSubTitle(subTitle);
     }
 
     public void setTitleGravity(int gravity) {
@@ -159,7 +163,7 @@ public class QMUITopBarLayout extends QMUIFrameLayout implements IQMUISkinDefaul
      * @param alpha 取值范围：[0, 255]，255表示不透明
      */
     public void setBackgroundAlpha(int alpha) {
-        this.getBackground().setAlpha(alpha);
+        this.getBackground().mutate().setAlpha(alpha);
     }
 
     /**

@@ -23,12 +23,12 @@ import android.view.LayoutInflater;
 import android.widget.Button;
 import android.widget.TextView;
 
-import androidx.constraintlayout.widget.ConstraintLayout;
-
 import com.qmuiteam.qmui.R;
 import com.qmuiteam.qmui.skin.QMUISkinHelper;
 import com.qmuiteam.qmui.skin.QMUISkinValueBuilder;
 import com.qmuiteam.qmui.skin.annotation.QMUISkinChangeNotAdapted;
+
+import androidx.constraintlayout.widget.ConstraintLayout;
 
 /**
  * 用于显示界面的 loading、错误信息提示等状态。
