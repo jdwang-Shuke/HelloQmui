@@ -22,7 +22,6 @@ import android.content.res.Resources;
 import android.os.Build;
 import android.os.Trace;
 import android.text.Spanned;
-import android.util.ArrayMap;
 import android.util.SparseArray;
 import android.view.View;
 import android.view.ViewGroup;
@@ -30,14 +29,6 @@ import android.view.Window;
 import android.widget.AdapterView;
 import android.widget.PopupWindow;
 import android.widget.TextView;
-
-import androidx.annotation.MainThread;
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.collection.SimpleArrayMap;
-import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.RecyclerView;
-import androidx.viewpager.widget.ViewPager;
 
 import com.qmuiteam.qmui.BuildConfig;
 import com.qmuiteam.qmui.QMUILog;
@@ -70,6 +61,15 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Objects;
+
+import androidx.annotation.MainThread;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.collection.ArrayMap;
+import androidx.collection.SimpleArrayMap;
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.viewpager.widget.ViewPager;
 
 public final class QMUISkinManager {
     private static final String TAG = "QMUISkinManager";
@@ -356,7 +356,7 @@ public final class QMUISkinManager {
         }
     }
 
-    public void defaultHandleSkinAttrs(@NonNull View view, Resources.Theme theme, SimpleArrayMap<String, Integer> attrs) {
+    public void defaultHandleSkinAttrs(@NonNull View view, Resources.Theme theme, @Nullable SimpleArrayMap<String, Integer> attrs) {
         if (attrs != null) {
             for (int i = 0; i < attrs.size(); i++) {
                 String key = attrs.keyAt(i);
@@ -592,7 +592,7 @@ public final class QMUISkinManager {
             if (item == null) {
                 mSkinChangeListeners.remove(i);
             } else {
-                item.onSkinChange(oldIndex, mCurrentSkin);
+                item.onSkinChange(this, oldIndex, mCurrentSkin);
             }
         }
     }
@@ -629,7 +629,7 @@ public final class QMUISkinManager {
     }
 
     public interface OnSkinChangeListener {
-        void onSkinChange(int oldSkin, int newSkin);
+        void onSkinChange(QMUISkinManager skinManager, int oldSkin, int newSkin);
     }
 
     class ViewSkinCurrent{

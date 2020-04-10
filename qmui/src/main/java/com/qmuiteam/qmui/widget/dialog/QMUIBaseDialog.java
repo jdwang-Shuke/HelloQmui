@@ -20,11 +20,11 @@ import android.content.Context;
 import android.content.res.TypedArray;
 import android.view.Window;
 
+import com.qmuiteam.qmui.skin.QMUISkinManager;
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatDialog;
-
-import com.qmuiteam.qmui.skin.QMUISkinManager;
 
 public class QMUIBaseDialog extends AppCompatDialog {
     boolean cancelable = true;

@@ -21,10 +21,10 @@ import android.text.SpannableStringBuilder;
 import android.text.Spanned;
 import android.view.View;
 
-import androidx.annotation.Nullable;
-
 import com.qmuiteam.qmui.span.QMUIAlignMiddleImageSpan;
 import com.qmuiteam.qmui.span.QMUIMarginImageSpan;
+
+import androidx.annotation.Nullable;
 
 /**
  * @author cginechen

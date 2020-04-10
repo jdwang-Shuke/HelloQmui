@@ -29,7 +29,6 @@ import android.widget.OverScroller;
 import androidx.annotation.NonNull;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.core.view.ViewCompat;
-
 import static android.view.View.MEASURED_SIZE_MASK;
 import static com.qmuiteam.qmui.QMUIInterpolatorStaticHolder.QUNITIC_INTERPOLATOR;
 

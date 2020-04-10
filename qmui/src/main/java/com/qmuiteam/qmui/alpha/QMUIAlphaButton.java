@@ -17,9 +17,8 @@
 package com.qmuiteam.qmui.alpha;
 
 import android.content.Context;
-import android.util.AttributeSet;
-
 import androidx.appcompat.widget.AppCompatButton;
+import android.util.AttributeSet;
 
 /**
  * 在 pressed 和 disabled 时改变 View 的透明度

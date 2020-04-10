@@ -34,8 +34,6 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
-import androidx.collection.SimpleArrayMap;
-
 import com.qmuiteam.qmui.R;
 import com.qmuiteam.qmui.alpha.QMUIAlphaImageButton;
 import com.qmuiteam.qmui.layout.QMUIRelativeLayout;
@@ -52,6 +50,11 @@ import com.qmuiteam.qmui.util.QMUIViewHelper;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import androidx.annotation.Nullable;
+import androidx.collection.SimpleArrayMap;
+
+import org.jetbrains.annotations.NotNull;
 
 /**
  * A standard toolbar for use within application content.
@@ -271,8 +274,8 @@ public class QMUITopBar extends QMUIRelativeLayout implements IQMUISkinHandlerVi
      *
      * @param resId TopBar 的副标题 resId
      */
-    public void setSubTitle(int resId) {
-        setSubTitle(getResources().getString(resId));
+    public QMUIQQFaceView setSubTitle(int resId) {
+        return setSubTitle(getResources().getString(resId));
     }
 
     private QMUIQQFaceView getSubTitleView() {
@@ -285,7 +288,7 @@ public class QMUITopBar extends QMUIRelativeLayout implements IQMUISkinHandlerVi
             mSubTitleView.setTextColor(mSubTitleTextColor);
             QMUISkinSimpleDefaultAttrProvider provider = new QMUISkinSimpleDefaultAttrProvider();
             provider.setDefaultSkinAttr(QMUISkinValueBuilder.TEXT_COLOR, R.attr.qmui_skin_support_topbar_subtitle_color);
-            mTitleView.setTag(R.id.qmui_skin_default_attr_provider, provider);
+            mSubTitleView.setTag(R.id.qmui_skin_default_attr_provider, provider);
             LinearLayout.LayoutParams titleLp = generateTitleViewAndSubTitleViewLp();
             titleLp.topMargin = QMUIDisplayHelper.dp2px(getContext(), 1);
             makeSureTitleContainerView().addView(mSubTitleView, titleLp);
@@ -323,6 +326,10 @@ public class QMUITopBar extends QMUIRelativeLayout implements IQMUISkinHandlerVi
             QMUIViewHelper.getDescendantRect(this, mTitleContainerView, mTitleContainerRect);
         }
         return mTitleContainerRect;
+    }
+
+    public LinearLayout getTitleContainerView() {
+        return mTitleContainerView;
     }
 
     void disableBackgroundSetter(){
@@ -667,7 +674,7 @@ public class QMUITopBar extends QMUIRelativeLayout implements IQMUISkinHandlerVi
      * @param alpha 取值范围：[0, 255]，255表示不透明
      */
     public void setBackgroundAlpha(int alpha) {
-        this.getBackground().setAlpha(alpha);
+        this.getBackground().mutate().setAlpha(alpha);
     }
 
     /**
@@ -756,7 +763,7 @@ public class QMUITopBar extends QMUIRelativeLayout implements IQMUISkinHandlerVi
     }
 
     @Override
-    public void handle(QMUISkinManager manager, int skinIndex, Resources.Theme theme, SimpleArrayMap<String, Integer> attrs) {
+    public void handle(@NotNull QMUISkinManager manager, int skinIndex, @NotNull Resources.Theme theme, @Nullable SimpleArrayMap<String, Integer> attrs) {
         if (attrs != null) {
             for (int i = 0; i < attrs.size(); i++) {
                 String key = attrs.keyAt(i);

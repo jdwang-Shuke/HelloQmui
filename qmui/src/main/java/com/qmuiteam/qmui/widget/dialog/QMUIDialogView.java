@@ -20,9 +20,9 @@ import android.content.Context;
 import android.graphics.Canvas;
 import android.util.AttributeSet;
 
-import androidx.annotation.Nullable;
-
 import com.qmuiteam.qmui.layout.QMUIConstraintLayout;
+
+import androidx.annotation.Nullable;
 
 /**
  * Created by cgspine on 2018/2/28.

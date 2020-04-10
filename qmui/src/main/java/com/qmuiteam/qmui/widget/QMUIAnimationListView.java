@@ -28,6 +28,8 @@ import android.graphics.Canvas;
 import android.os.Build;
 import android.os.Looper;
 import android.os.SystemClock;
+import androidx.collection.LongSparseArray;
+import androidx.core.view.ViewCompat;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.MotionEvent;
@@ -39,9 +41,6 @@ import android.view.animation.LinearInterpolator;
 import android.widget.BaseAdapter;
 import android.widget.ListAdapter;
 import android.widget.ListView;
-
-import androidx.collection.LongSparseArray;
-import androidx.core.view.ViewCompat;
 
 import com.qmuiteam.qmui.QMUILog;
 

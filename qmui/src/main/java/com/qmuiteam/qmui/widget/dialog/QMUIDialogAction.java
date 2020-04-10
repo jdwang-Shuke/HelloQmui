@@ -23,18 +23,19 @@ import android.content.res.TypedArray;
 import android.util.TypedValue;
 import android.view.View;
 
-import androidx.annotation.IntDef;
-import androidx.annotation.Nullable;
-import androidx.core.content.ContextCompat;
-
 import com.qmuiteam.qmui.R;
 import com.qmuiteam.qmui.layout.QMUIButton;
 import com.qmuiteam.qmui.skin.QMUISkinHelper;
 import com.qmuiteam.qmui.skin.QMUISkinValueBuilder;
 import com.qmuiteam.qmui.util.QMUISpanHelper;
+import com.qmuiteam.qmui.util.QMUIViewHelper;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
+
+import androidx.annotation.IntDef;
+import androidx.annotation.Nullable;
+import androidx.core.content.ContextCompat;
 
 /**
  * @author cginechen

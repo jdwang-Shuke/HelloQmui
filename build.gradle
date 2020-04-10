@@ -33,7 +33,7 @@ ext {
     targetSdkVersion = 29
     compileSdkVersion = 29
     buildToolsVersion = '29.0.3'
-    appcompatVersion= '1.2.0-alpha03'
+    appcompatVersion= '1.2.0-beta01'
     materialVersion='1.1.0'
     annotationVersion='1.1.0'
     butterknifeVersion = '10.1.0'

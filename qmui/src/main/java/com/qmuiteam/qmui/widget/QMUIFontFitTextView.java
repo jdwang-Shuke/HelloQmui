@@ -22,10 +22,10 @@ import android.graphics.Paint;
 import android.util.AttributeSet;
 import android.util.TypedValue;
 
-import androidx.appcompat.widget.AppCompatTextView;
-
 import com.qmuiteam.qmui.R;
 import com.qmuiteam.qmui.util.QMUIDisplayHelper;
+
+import androidx.appcompat.widget.AppCompatTextView;
 
 /**
  * 使 {@link android.widget.TextView} 在宽度固定的情况下，文字多到一行放不下时能缩小文字大小来自适应

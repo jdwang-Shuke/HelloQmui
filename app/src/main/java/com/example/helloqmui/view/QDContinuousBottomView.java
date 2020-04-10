@@ -15,7 +15,6 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.helloqmui.BottomListAdapter;
-import com.example.helloqmui.R;
 import com.example.helloqmui.common.DisplayUtils;
 import com.google.android.material.tabs.TabLayout;
 import com.qmuiteam.qmui.nestedScroll.IQMUIContinuousNestedBottomView;

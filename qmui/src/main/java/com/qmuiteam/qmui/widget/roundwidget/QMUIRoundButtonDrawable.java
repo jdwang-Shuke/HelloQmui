@@ -23,9 +23,8 @@ import android.graphics.Color;
 import android.graphics.Rect;
 import android.graphics.drawable.GradientDrawable;
 import android.os.Build;
-import android.util.AttributeSet;
-
 import androidx.annotation.Nullable;
+import android.util.AttributeSet;
 
 import com.qmuiteam.qmui.R;
 

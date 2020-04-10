@@ -6,14 +6,14 @@ import android.os.Build;
 import android.webkit.WebResourceRequest;
 import android.webkit.WebView;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-
 import com.qmuiteam.qmui.util.QMUILangHelper;
 
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 public class QMUIBridgeWebViewClient extends QMUIWebViewClient {
     public static final String QMUI_BRIDGE_HAS_MESSAGE = "qmui://__QUEUE_MESSAGE__";

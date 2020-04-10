@@ -35,10 +35,6 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 
-import androidx.annotation.ColorInt;
-import androidx.annotation.Nullable;
-import androidx.core.content.ContextCompat;
-
 import com.qmuiteam.qmui.QMUILog;
 import com.qmuiteam.qmui.R;
 import com.qmuiteam.qmui.link.ITouchableSpan;
@@ -49,6 +45,10 @@ import com.qmuiteam.qmui.util.QMUILangHelper;
 import java.lang.ref.WeakReference;
 import java.util.HashMap;
 import java.util.List;
+
+import androidx.annotation.ColorInt;
+import androidx.annotation.Nullable;
+import androidx.core.content.ContextCompat;
 
 import static android.view.View.MeasureSpec.AT_MOST;
 

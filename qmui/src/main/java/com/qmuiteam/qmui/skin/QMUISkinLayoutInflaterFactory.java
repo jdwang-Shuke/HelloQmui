@@ -23,15 +23,15 @@ import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
 
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
-
 import com.qmuiteam.qmui.QMUILog;
 import com.qmuiteam.qmui.R;
 import com.qmuiteam.qmui.util.QMUILangHelper;
 
 import java.lang.ref.WeakReference;
 import java.util.HashMap;
+
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class QMUISkinLayoutInflaterFactory implements LayoutInflater.Factory2 {
     private static final String TAG = "QMUISkin";

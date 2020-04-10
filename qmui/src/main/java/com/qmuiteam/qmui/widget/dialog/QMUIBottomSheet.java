@@ -31,14 +31,6 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.LinearLayout;
 
-import androidx.annotation.IntDef;
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.coordinatorlayout.widget.CoordinatorLayout;
-import androidx.core.view.ViewCompat;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
 import com.qmuiteam.qmui.R;
 
@@ -46,6 +38,14 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.util.ArrayList;
 import java.util.List;
+
+import androidx.annotation.IntDef;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
+import androidx.core.view.ViewCompat;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import static com.qmuiteam.qmui.layout.IQMUILayout.HIDE_RADIUS_SIDE_BOTTOM;
 
@@ -433,7 +433,7 @@ public class QMUIBottomSheet extends QMUIBaseDialog {
                 }
             }
             LinearLayout footerView = null;
-            if (mContentFooterViews != null && mContentHeaderViews.size() > 0) {
+            if (mContentFooterViews != null && mContentFooterViews.size() > 0) {
                 footerView = new LinearLayout(context);
                 footerView.setOrientation(LinearLayout.VERTICAL);
                 for (View view : mContentFooterViews) {

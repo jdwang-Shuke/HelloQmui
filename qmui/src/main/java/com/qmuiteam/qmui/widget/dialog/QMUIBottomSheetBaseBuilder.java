@@ -21,9 +21,7 @@ import android.content.DialogInterface;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
-
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
+import android.widget.TextView;
 
 import com.qmuiteam.qmui.R;
 import com.qmuiteam.qmui.layout.QMUIButton;
@@ -32,6 +30,9 @@ import com.qmuiteam.qmui.skin.QMUISkinManager;
 import com.qmuiteam.qmui.skin.QMUISkinValueBuilder;
 import com.qmuiteam.qmui.util.QMUIResHelper;
 import com.qmuiteam.qmui.widget.textview.QMUISpanTouchFixTextView;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 public abstract class QMUIBottomSheetBaseBuilder<T extends QMUIBottomSheetBaseBuilder> {
     private Context mContext;
@@ -47,7 +48,6 @@ public abstract class QMUIBottomSheetBaseBuilder<T extends QMUIBottomSheetBaseBu
 
     public QMUIBottomSheetBaseBuilder(Context context) {
         mContext = context;
-        mSkinManager = QMUISkinManager.defaultInstance(context);
     }
 
     @SuppressWarnings("unchecked")

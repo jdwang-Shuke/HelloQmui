@@ -23,9 +23,8 @@ import android.text.TextUtils;
 import android.util.TypedValue;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
-
-import androidx.appcompat.widget.AppCompatImageView;
 
 import com.qmuiteam.qmui.R;
 import com.qmuiteam.qmui.layout.QMUIConstraintLayout;
@@ -34,6 +33,8 @@ import com.qmuiteam.qmui.skin.QMUISkinValueBuilder;
 import com.qmuiteam.qmui.util.QMUIResHelper;
 import com.qmuiteam.qmui.util.QMUIViewHelper;
 import com.qmuiteam.qmui.widget.textview.QMUISpanTouchFixTextView;
+
+import androidx.appcompat.widget.AppCompatImageView;
 
 
 /**

@@ -20,11 +20,11 @@ import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
 import android.view.Gravity;
 
-import androidx.annotation.Nullable;
-
 import com.qmuiteam.qmui.R;
 import com.qmuiteam.qmui.util.QMUIDisplayHelper;
 import com.qmuiteam.qmui.util.QMUIResHelper;
+
+import androidx.annotation.Nullable;
 
 
 /**

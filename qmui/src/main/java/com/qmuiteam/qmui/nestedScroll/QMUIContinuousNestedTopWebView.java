@@ -21,10 +21,10 @@ import android.os.Build;
 import android.os.Bundle;
 import android.util.AttributeSet;
 
-import androidx.annotation.NonNull;
-
 import com.qmuiteam.qmui.util.QMUIDisplayHelper;
 import com.qmuiteam.qmui.widget.webview.QMUIWebView;
+
+import androidx.annotation.NonNull;
 
 public class QMUIContinuousNestedTopWebView extends QMUIWebView implements IQMUIContinuousNestedTopView {
 

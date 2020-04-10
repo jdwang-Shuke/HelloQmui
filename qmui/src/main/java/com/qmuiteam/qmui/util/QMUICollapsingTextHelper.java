@@ -48,13 +48,13 @@ import android.view.Gravity;
 import android.view.View;
 import android.view.animation.Interpolator;
 
+import com.qmuiteam.qmui.R;
+
 import androidx.annotation.ColorInt;
 import androidx.annotation.RequiresApi;
 import androidx.core.text.TextDirectionHeuristicsCompat;
 import androidx.core.view.GravityCompat;
 import androidx.core.view.ViewCompat;
-
-import com.qmuiteam.qmui.R;
 
 public final class QMUICollapsingTextHelper {
 

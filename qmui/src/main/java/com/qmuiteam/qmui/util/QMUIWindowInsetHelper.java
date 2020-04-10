@@ -29,6 +29,14 @@ import android.view.ViewParent;
 import android.view.WindowInsets;
 import android.widget.FrameLayout;
 
+import com.qmuiteam.qmui.R;
+import com.qmuiteam.qmui.widget.INotchInsetConsumer;
+import com.qmuiteam.qmui.widget.IWindowInsetLayout;
+import com.qmuiteam.qmui.widget.IWindowInsetKeyboardConsumer;
+
+import java.lang.ref.WeakReference;
+import java.util.ArrayList;
+
 import androidx.annotation.NonNull;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
@@ -36,14 +44,6 @@ import androidx.core.view.OnApplyWindowInsetsListener;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
-
-import com.qmuiteam.qmui.R;
-import com.qmuiteam.qmui.widget.INotchInsetConsumer;
-import com.qmuiteam.qmui.widget.IWindowInsetKeyboardConsumer;
-import com.qmuiteam.qmui.widget.IWindowInsetLayout;
-
-import java.lang.ref.WeakReference;
-import java.util.ArrayList;
 
 /**
  * @author cginechen

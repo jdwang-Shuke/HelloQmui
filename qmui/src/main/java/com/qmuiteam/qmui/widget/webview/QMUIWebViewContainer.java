@@ -26,11 +26,11 @@ import android.view.WindowInsets;
 import android.webkit.WebView;
 import android.widget.FrameLayout;
 
-import androidx.annotation.NonNull;
-import androidx.core.view.WindowInsetsCompat;
-
 import com.qmuiteam.qmui.util.QMUINotchHelper;
 import com.qmuiteam.qmui.widget.QMUIWindowInsetLayout;
+
+import androidx.annotation.NonNull;
+import androidx.core.view.WindowInsetsCompat;
 
 public class QMUIWebViewContainer extends QMUIWindowInsetLayout {
 

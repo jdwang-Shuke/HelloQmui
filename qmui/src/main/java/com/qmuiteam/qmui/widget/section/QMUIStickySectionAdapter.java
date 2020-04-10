@@ -16,15 +16,14 @@
 
 package com.qmuiteam.qmui.widget.section;
 
-import android.util.Log;
-import android.util.SparseIntArray;
-import android.view.View;
-import android.view.ViewGroup;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.DiffUtil;
 import androidx.recyclerview.widget.RecyclerView;
+import android.util.Log;
+import android.util.SparseIntArray;
+import android.view.View;
+import android.view.ViewGroup;
 
 import java.util.ArrayList;
 import java.util.List;

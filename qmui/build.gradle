@@ -57,9 +57,3 @@ dependencies {
     api 'androidx.swiperefreshlayout:swiperefreshlayout:1.0.0'
     compileOnly "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
 }
-
-// deploy
-File deployConfig = rootProject.file('gradle/deploy.properties')
-if (deployConfig.exists()) {
-    apply from: rootProject.file('gradle/deploy.gradle')
-}
