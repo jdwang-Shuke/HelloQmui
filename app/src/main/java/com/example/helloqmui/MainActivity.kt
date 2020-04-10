@@ -40,11 +40,11 @@ class MainActivity : AppCompatActivity() {
             //header
             headerView = ItemBannerBinding.inflate(layoutInflater).root
             //top list view
-            delegateView = QMUIContinuousNestedTopRecyclerView(context).apply {
-                layoutManager = object : GridLayoutManager(context, 6) {
-                }
-                adapter = TopListAdapter(context)
-            }
+//            delegateView = QMUIContinuousNestedTopRecyclerView(context).apply {
+//                layoutManager = object : GridLayoutManager(context, 6) {
+//                }
+//                adapter = TopListAdapter(context)
+//            }
         }
         val matchParent = ViewGroup.LayoutParams.MATCH_PARENT
         val topLp = CoordinatorLayout.LayoutParams(matchParent, matchParent)
