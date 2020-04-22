@@ -1,36 +1,24 @@
 package com.example.helloqmui
 
 import android.graphics.Color
-import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import android.util.Log
 import android.view.ViewGroup
-import androidx.appcompat.app.AppCompatActivity
 import androidx.coordinatorlayout.widget.CoordinatorLayout
-import androidx.recyclerview.widget.DividerItemDecoration
-import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.RecyclerView
+import com.example.helloqmui.base.BaseActivity
 import com.example.helloqmui.common.DisplayUtils.getDimenDp
 import com.example.helloqmui.common.DisplayUtils.statusBarHeight
 import com.example.helloqmui.databinding.ActivityMainBinding
 import com.example.helloqmui.databinding.ItemBannerBinding
 import com.example.helloqmui.view.QDContinuousBottomView
-import com.google.android.material.math.MathUtils
 import com.gyf.immersionbar.ImmersionBar
 import com.qmuiteam.qmui.nestedScroll.*
 import com.qmuiteam.qmui.widget.pullRefreshLayout.QMUIPullRefreshLayout
-import kotlin.math.min
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : BaseActivity<ActivityMainBinding>() {
 
-    private val mBinding by lazy {
-        ActivityMainBinding.inflate(layoutInflater)
-    }
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(mBinding.root)
+    override fun doBusiness() {
         ImmersionBar.with(this)
             .titleBar(mBinding.flTitle).init()
         //top
@@ -109,7 +97,7 @@ class MainActivity : AppCompatActivity() {
                         bottomRange
                     )
                 )
-                mBinding.flTitle.alpha = Math.min(offsetCurrent*1f/SCROLL_THRESHOLD,1f)
+                mBinding.flTitle.alpha = (offsetCurrent * 1f / SCROLL_THRESHOLD).coerceAtMost(1f)
             }
         })
     }
@@ -124,4 +112,5 @@ class MainActivity : AppCompatActivity() {
             mBinding.coordinator.removeAllScrollListener()
         }
     }
+
 }

@@ -25,8 +25,8 @@ import androidx.annotation.ColorRes;
 import androidx.appcompat.widget.AppCompatImageView;
 import androidx.collection.SimpleArrayMap;
 import androidx.core.content.ContextCompat;
-import androidx.swiperefreshlayout.widget.CircularProgressDrawable;
 
+import com.qmuiteam.qmui.CircularProgressDrawable;
 import com.qmuiteam.qmui.R;
 import com.qmuiteam.qmui.skin.QMUISkinValueBuilder;
 import com.qmuiteam.qmui.skin.defaultAttr.IQMUISkinDefaultAttrProvider;

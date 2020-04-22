@@ -31,6 +31,7 @@ import android.widget.AbsListView;
 import android.widget.Scroller;
 
 import com.qmuiteam.qmui.BuildConfig;
+import com.qmuiteam.qmui.CircularProgressDrawable;
 import com.qmuiteam.qmui.R;
 import com.qmuiteam.qmui.nestedScroll.QMUIContinuousNestedScrollLayout;
 import com.qmuiteam.qmui.skin.QMUISkinValueBuilder;
@@ -49,7 +50,6 @@ import androidx.core.view.NestedScrollingParent;
 import androidx.core.view.NestedScrollingParentHelper;
 import androidx.core.view.ViewCompat;
 import androidx.recyclerview.widget.RecyclerView;
-import androidx.swiperefreshlayout.widget.CircularProgressDrawable;
 
 /**
  * 下拉刷新控件, 作为容器，下拉时会将子 View 下移, 并拉出 RefreshView（表示正在刷新的 View）
